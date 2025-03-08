@@ -5,9 +5,9 @@ public class PalindromInAGivenRange{
         // for Input
       Scanner sc = new Scanner(System.in);
       String inputStr = sc.nextLine(); // "10 30"
-      String[] inputStrArr= inputStr.split(" "); //["10","30"]
+      String[] inputStrArr= inputStr.split(" "); //["10","30"] removes the space and returnd the string as an array
       int[] inputArr = new int[inputStrArr.length];
-      for(int i=0;i<inputStrArr.length; i++){
+      for(int i=0;i<inputStrArr.length; i++){ //to traverse the str arr and convert it into int
         inputArr[i]=Integer.parseInt(inputStrArr[i]);
        }
       System.out.println(inputArr);// [10,30]
@@ -30,7 +30,7 @@ public class PalindromInAGivenRange{
         while(temp>0){
             int digit = temp%10;
             rev= rev*10+digit;
-            temp=temp/10;
+            temp=temp/10;  //terminate
         }
         if(rev==num){
             return true;
