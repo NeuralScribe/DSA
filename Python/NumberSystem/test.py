@@ -4,3 +4,5 @@ my_set =set()
 for a in arr:
     my_set.add(a)
 print(my_set)
+for b in my_set:
+    print(b)
