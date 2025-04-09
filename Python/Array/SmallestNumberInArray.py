@@ -1,3 +1,11 @@
-arr = [132, 24, 38, 473, 902, 625, 629, 23, 32]
+import sys # will provide access to some variable used or maintained by sys interpreter 
+arr = list(map(int, input().strip().split()))
 SmallNum = min(arr)
-print("The smallest number in the array is:", + SmallNum)
+print(SmallNum)
+
+# second smallest
+secondSmallest = sys.maxsize #gives the largest element
+for a in arr:
+    if a < secondSmallest and a >SmallNum:
+        secondSmallest = a 
+print(secondSmallest)
