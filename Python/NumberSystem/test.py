@@ -1,15 +1,6 @@
-#print prime num in a range 1 to 100
-sum = 0
-for i in range(2, 101):
-    #print a no is prime or not
-    n = i
-    isPrime = True
-    for j in range(2, n):
-        if n %j ==0:
-            isPrime =False
-    if isPrime:
-        #print(i)
-        sum = sum+i
-print(sum, end = "")
-
-    
+# find unique ele of an array
+arr =list(map(int,input().strip().split()))
+my_set =set()
+for a in arr:
+    my_set.add(a)
+print(my_set)
