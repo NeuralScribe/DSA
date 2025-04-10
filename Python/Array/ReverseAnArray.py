@@ -8,3 +8,8 @@ while left < right :
     right -=1
 for num in arr:
         print(num)
+
+arr = list(map(int,input().strip().split()))
+rev = arr[::-1] #: -> first index and : -> last index -1 -> reverse order
+print(rev)
+
