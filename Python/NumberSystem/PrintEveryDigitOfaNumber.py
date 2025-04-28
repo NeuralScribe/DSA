@@ -1,6 +1,6 @@
-n1 = int(input())
+num = int(input())
 
-temp = n1
+temp = num
 while temp > 0:
     digit = temp % 10
     print(digit)
